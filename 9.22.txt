@@ -1,0 +1,27 @@
+layout_weight 를 사용할 때는 width 를 0dp로 놓고 사용하는게 좋다.
+
+
+
+
+매니페스트(manifast) ==> 만약에 사용자가 앱을 눌러 실행했을 때 어플시스템에 그 실행 의도를 전달하는 장치?정도로 이해.
+
+intent는 의도, filter는 일종의 덫!
+
+액티비티 간에는 서로 벽이 처져있다.
+
+앱이 하나 실행될 때는 다른 앱은 죽어있다고 생각
+
+public class Main3Activity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main3);
+    }
+
+    public void button3Clicked(View view) {
+        Intent intent = new Intent(this,MainActivity.class);   ==> Main3Activity가 this에 해당, 이버튼을 누르면 MainActivity.class로 이동.
+        startActivity(intent);   ==> 액티비티를 시작한다.
+    }
+}
+
