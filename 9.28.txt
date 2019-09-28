@@ -1,0 +1,26 @@
+9.28
+
+안드로이드
+
+Intent intent = new Intent(Intent.ACTION_DIAL);
+
+        intent.setData(Uri.parse("tel:" + phoneNumber));
+
+        if(intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);
+        }
+
+==> 이 부분에선 번호를 받아온 후 지정한 앱을 실행해서 전화를 거는 형식이 아니라 임의의 앱을 이용해서 전화를 걸도록 설정해 놓은 방식이다.
+이는 암시적 인텐트 라고 한다.(ACTION_DIAL 이 암시적 인텐트이다.)
+
+URI 형태 => tel:0101231234
+
+5일차에서 
+
+문제 3
+내용 : 한 액티비티가 다른 액티비티에게 뭔가를 요청하고 대기하다가 요청작업이 끝나면 응답을 받는 예를 구현해주세요.
+조건 : startActivityForResult 를 활용해주세요.
+정답
+v1
+
+==> 이것은 익숙하게 할 수 있게 해야 한다.(최우선으로.)
