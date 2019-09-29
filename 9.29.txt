@@ -1,0 +1,14 @@
+AndroidManifast 는 시스템에 자신을 홍보하는것.
+여기서 uses-permission 는 해당 기능을 사용하라는 뜻.
+
+onCreate 는 자바에서 main 과 같은 기능을 한다. 현재 프로그래밍에 필요한 기능 등을 정의해 놓으면 되는 곳.
+
+webView1.setWebViewClient(new WebViewClient()
+==> 이 부분은 crome 같이 브라우저를 지정해 주는 것.(기본 브라우저 지정세팅)
+
+webView1.addJavascriptInterface(new MyJavaScriptInterface(), "android");
+=> 이 부분에서 JavascriptInterface 를 쓰기 위해서는 해당하는 클래스가 있는 부분에 @JavascriptInterface 를 꼭 지정해 주어야 한다.
+
+manifast 부분에서
+android:usesCleartextTraffic="true"
+은 원래 https 를 사용해야 하는데 http만 사용하는 것을 허용하는 부분.
