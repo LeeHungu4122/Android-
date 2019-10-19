@@ -1,0 +1,19 @@
+android:text="@string/add" 
+==> values 폴더에 있는 xml 파일들 중 strings.xml 에 되어있는 add기능을 수행?하는것으로 보임
+
+10월19일 11일차 문제1은 메모해놓고 없어짐
+
+문제2부터 DB사용해서 저장하여 앱꺼도 데이터 유지.
+
+<DB>
+SharedPreferences -> 간단
+SQLite -> 복잡
+
+
+문제5는 2개의 thread를 사용하는 것
+여기서 doInBackground 라는 thread는 다른공간. 복잡한 과정에 사용.
+
+원래는 메인만 사용가능(충돌때문) 
+2번째  thread와 중간에 소통하며 사용가능.
+
+새로만든 Thread는 main thread 와 완전 다른세상.
