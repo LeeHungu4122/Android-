@@ -1,0 +1,19 @@
+gradle => pom.xml 같은 역할?
+
+recyclerview => 리스트뷰일종 뷰홀더가 강제됨.
+
+room => orm이라는 기술?
+
+cardview => 화면에 보이는 화면?
+
+doInBackground 그 부모 클래스마지막에 excute에서 실행된다.
+
+이 클래스 후에 onPostExcute에 변수를 넘겨 실행된다.
+
+data access object => 데이터 저장소
+
+*********************** room 에 대해 정리해보자!!! **************************
+
+Void... voids ==> Void 배열이라는 의미.(그러나 void 는 무 의 의미)
+
+if문에서 한줄이면 {} 생략가능.
