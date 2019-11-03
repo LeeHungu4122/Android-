@@ -1,0 +1,7 @@
+sj.oa.gg
+
+PWA => SPA + 오프라인 웹
+
+nodejs 설치
+
+nuxt 처음부터시작하기 해보기
